@@ -44,15 +44,15 @@ Every write-up follows the same shape:
 | Blind OS command injection with output redirection | Blind OS Command Injection (CWE-78) | [command-injection/os-command-injection-lab3-writeup.md](OS_Command_Injection/os-command-injection-lab3-writeup.md) |
 | Blind OS command injection with out-of-band interaction | Blind OS Command Injection (CWE-78) | [command-injection/os-command-injection-lab4-writeup.md](OS_Command_Injection/os-command-injection-lab4-writeup.md) |
 
-## Planned write-ups (not written yet)
+### Authentication
 
-| Topic | Lab |
-|---|---|
-| Authentication | Username enumeration via different responses |
-| Authentication | 2FA simple bypass |
-| Authentication | Broken brute-force protection |
-| Authentication | Password reset broken logic |
-| Authentication | Offline password cracking |
+| Lab | Vulnerability | File |
+|---|---|---|
+| Username enumeration via response timing | Username Enumeration (CWE-208) | [Authentication/auth-enum-response-timing-writeup.md](Authentication/auth-enum-response-timing-writeup.md) |
+| Broken brute-force protection, multiple credentials per request | Brute-Force Protection Bypass (CWE-307) | [Authentication/auth-bruteforce-multi-credentials-writeup.md](Authentication/auth-bruteforce-multi-credentials-writeup.md) |
+| 2FA broken logic | Broken 2FA (CWE-287) | [Authentication/auth-2fa-broken-logic-writeup.md](Authentication/auth-2fa-broken-logic-writeup.md) |
+| Password reset poisoning via middleware | Password Reset Poisoning (CWE-640) | [Authentication/auth-password-reset-poisoning-writeup.md](Authentication/auth-password-reset-poisoning-writeup.md) |
+| Offline password cracking | Weak Password Hash in Cookie (CWE-916) | [Authentication/auth-offline-password-cracking-writeup.md](Authentication/auth-offline-password-cracking-writeup.md) |
 
 ## Notes
 
