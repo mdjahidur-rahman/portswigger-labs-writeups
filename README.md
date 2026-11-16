@@ -59,4 +59,3 @@ Every write-up follows the same shape:
 - All testing was done only in PortSwigger practice labs, with permission from the lab itself.
 - No real credentials, real company names, or real systems are in these files. Session cookies and recovered passwords in screenshots are blacked out.
 - Screenshots live in each topic folder's `Images/` folder — keep that folder with the markdown files, or the images will not show.
-- Command Injection lab 5 (blind, out-of-band data exfiltration) is not included: I understand the process, but Burp Collaborator showed no interaction, so it is not verified as solved. It is parked to the Dec 14–20 review week.
