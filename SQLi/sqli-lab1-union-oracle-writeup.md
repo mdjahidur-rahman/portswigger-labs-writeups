@@ -67,22 +67,22 @@ GET /filter?category='+UNION+SELECT+USERNAME_EFXPME,+PASSWORD_QWNGZV+FROM+USERS_
 Step 2 — the Oracle test. `SELECT 'abc','def' FROM dual` returned
 both values, proving Oracle and 2 text columns:
 
-![Oracle test — abc and def returned from dual](images/sqli-lab1-oracle-test.png)
+![Oracle test — abc and def returned from dual](Images/sqli-lab1-oracle-test.png)
 
 Step 3 — listing the tables from `all_tables`:
 
-![Table list from all_tables](images/sqli-lab1-tables.png)
+![Table list from all_tables](Images/sqli-lab1-tables.png)
 
 Step 4 — the columns of the users table (`EMAIL`, `PASSWORD_QWNGZV`,
 `USERNAME_EFXPME`):
 
-![Columns of USERS_QTDKWH from all_tab_columns](images/sqli-lab1-columns.png)
+![Columns of USERS_QTDKWH from all_tab_columns](Images/sqli-lab1-columns.png)
 
 Step 5 — usernames and passwords read out of the users table
 (password values blacked out — they are lab credentials, but
 passwords are never published):
 
-![Usernames and passwords from USERS_QTDKWH](images/sqli-lab1-credentials.png)
+![Usernames and passwords from USERS_QTDKWH](Images/sqli-lab1-credentials.png)
 
 ## Impact
 

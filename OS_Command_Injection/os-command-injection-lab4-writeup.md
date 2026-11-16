@@ -58,6 +58,11 @@ one is unique to a Burp session and should not be published.)
 - A DNS interaction logged in Burp Collaborator for the payload
   subdomain, coming from the lab server. No output appears in the HTTP
   response itself — the out-of-band DNS lookup is the proof.
+- The lab solved screen, with the injected request in Repeater and the
+  Burp Collaborator client open (session cookie and Collaborator
+  subdomain redacted):
+
+![Lab solved — Burp Repeater request and Collaborator client](Images/os-command-injection-lab4-solved.png)
 
 ## Impact
 

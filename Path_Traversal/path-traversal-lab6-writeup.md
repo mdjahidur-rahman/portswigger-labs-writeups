@@ -57,7 +57,7 @@ sees `.jpg`, so it passes. But the underlying file handling treats
 Burp Repeater — the null byte payload in the `filename` parameter
 (left) and the `/etc/passwd` contents in the response (right).
 
-![Burp Repeater — null byte payload, /etc/passwd contents returned](images/path-traversal-lab6-success.png)
+![Burp Repeater — null byte payload, /etc/passwd contents returned](Images/path-traversal-lab6-success.png)
 
 Response (extract):
 

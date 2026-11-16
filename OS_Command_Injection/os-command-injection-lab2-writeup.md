@@ -52,7 +52,7 @@ response body is only `{}`, with no command output — this is a blind
 injection. The proof is the response time at the bottom right:
 **9,691 millis**, about 10 seconds, matching the `ping -c 10` delay.
 
-![Burp Repeater — blind time-delay command injection, 9,691 ms response](images/os-command-injection-lab2-repeater.png)
+![Burp Repeater — blind time-delay command injection, 9,691 ms response](Images/os-command-injection-lab2-repeater.png)
 
 Response (extract):
 

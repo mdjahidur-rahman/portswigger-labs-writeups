@@ -64,12 +64,12 @@ The double-encoded payload with only two traversal levels returned
 400 "No such file" — not enough levels to climb out of the images
 directory:
 
-![Two traversal levels — 400 No such file](images/path-traversal-lab4-attempt.png)
+![Two traversal levels — 400 No such file](Images/path-traversal-lab4-attempt.png)
 
 With three levels, the same payload returned 200 and the contents of
 `/etc/passwd`:
 
-![Three traversal levels — /etc/passwd contents returned](images/path-traversal-lab4-success.png)
+![Three traversal levels — /etc/passwd contents returned](Images/path-traversal-lab4-success.png)
 
 Response (extract):
 

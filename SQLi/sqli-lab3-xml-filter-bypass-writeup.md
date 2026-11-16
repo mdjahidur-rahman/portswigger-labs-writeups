@@ -100,16 +100,16 @@ disagreement is the vulnerability.
 
 Normal request — `productId` 1, `storeId` 1, returns 888 units:
 
-![Normal stock check — 888 units](images/sqli-lab3-normal.png)
+![Normal stock check — 888 units](Images/sqli-lab3-normal.png)
 
 Step 2, the `1+1` probe — evaluated, returns 135 units:
 
-![1+1 probe — input is evaluated, 135 units](images/sqli-lab3-probe.png)
+![1+1 probe — input is evaluated, 135 units](Images/sqli-lab3-probe.png)
 
 Step 3 — plain `UNION SELECT` blocked by the WAF, 403 "Attack
 detected":
 
-![Plain UNION SELECT blocked — 403 Attack detected](images/sqli-lab3-blocked.png)
+![Plain UNION SELECT blocked — 403 Attack detected](Images/sqli-lab3-blocked.png)
 
 Step 4, first bypass attempt — still 403 "Attack detected". Two
 things were wrong: Hackvertor was not installed yet, so the
@@ -118,7 +118,7 @@ still contained a plain `UNION SELECT`, which the WAF caught on its
 own. The fix is to install Hackvertor and put the payload only in
 the `storeId`, with `productId` back to 1:
 
-![Bypass attempt before Hackvertor was installed — still blocked](images/sqli-lab3-hackvertor.png)
+![Bypass attempt before Hackvertor was installed — still blocked](Images/sqli-lab3-hackvertor.png)
 
 ## Impact
 

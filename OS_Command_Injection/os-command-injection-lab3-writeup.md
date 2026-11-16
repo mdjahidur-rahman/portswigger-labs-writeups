@@ -64,12 +64,12 @@ Burp Repeater — injected request (left) and the response (right). The
 response body is only `{}`, with no command output — this is a blind
 injection.
 
-![Burp Repeater — output redirection payload in the email field](images/os-command-injection-lab3-repeater.png)
+![Burp Repeater — output redirection payload in the email field](Images/os-command-injection-lab3-repeater.png)
 
 The file read back in the browser shows the command output — the server
 username:
 
-![Browser — test.txt showing the whoami output, peter-gEM0P3](images/os-command-injection-lab3-output.png)
+![Browser — test.txt showing the whoami output, peter-gEM0P3](Images/os-command-injection-lab3-output.png)
 
 ```text
 peter-gEM0P3

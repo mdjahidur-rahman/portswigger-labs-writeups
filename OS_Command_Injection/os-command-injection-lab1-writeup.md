@@ -43,7 +43,7 @@ The response shows the input reached the shell: the shell reports an error
 from the server-side script, leaking its path
 (`/home/peter-PidWTq/stockreport.sh`), which confirms command execution.
 
-![Burp Repeater — OS command injection request and response](images/os-command-injection-lab1-repeater.png)
+![Burp Repeater — OS command injection request and response](Images/os-command-injection-lab1-repeater.png)
 
 Response (extract):
 

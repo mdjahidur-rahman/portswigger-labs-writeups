@@ -100,23 +100,23 @@ Cookie: TrackingId=APTHBqIABYCDhoJb' AND (SELECT SUBSTRING(password,§1§,1) FRO
 
 Step 2, true condition — `AND '1'='1`, "Welcome back!" appears:
 
-![True condition — Welcome back appears](images/sqli-lab2-true.png)
+![True condition — Welcome back appears](Images/sqli-lab2-true.png)
 
 Step 2, false condition — `AND '1'='2`, "Welcome back!" is gone:
 
-![False condition — Welcome back missing](images/sqli-lab2-false.png)
+![False condition — Welcome back missing](Images/sqli-lab2-false.png)
 
 Step 3 — the `users` table exists:
 
-![Users table check — Welcome back appears](images/sqli-lab2-users-table.png)
+![Users table check — Welcome back appears](Images/sqli-lab2-users-table.png)
 
 Step 4 — the `administrator` user exists:
 
-![Administrator check — Welcome back appears](images/sqli-lab2-administrator.png)
+![Administrator check — Welcome back appears](Images/sqli-lab2-administrator.png)
 
 Step 5 — the password is 20 characters long:
 
-![Password length check — LENGTH(password)=20 is true](images/sqli-lab2-password-length.png)
+![Password length check — LENGTH(password)=20 is true](Images/sqli-lab2-password-length.png)
 
 Step 6 — Burp Intruder cluster bomb results. Rows with length 5,570
 and the "Welcome back!" marker checked are correct characters at
@@ -124,7 +124,7 @@ their positions (Payload1 is the position). The recovered characters
 are blacked out — they spell out the password, and passwords are
 never published:
 
-![Intruder results — correct characters marked by length 5570](images/sqli-lab2-intruder.png)
+![Intruder results — correct characters marked by length 5570](Images/sqli-lab2-intruder.png)
 
 ## Impact
 
