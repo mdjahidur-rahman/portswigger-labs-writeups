@@ -54,8 +54,17 @@ Every write-up follows the same shape:
 | Password reset poisoning via middleware | Password Reset Poisoning (CWE-640) | [Authentication/auth-password-reset-poisoning-writeup.md](Authentication/auth-password-reset-poisoning-writeup.md) |
 | Offline password cracking | Weak Password Hash in Cookie (CWE-916) | [Authentication/auth-offline-password-cracking-writeup.md](Authentication/auth-offline-password-cracking-writeup.md) |
 
+### Cross-site request forgery (CSRF)
+
+| Lab | Vulnerability | File |
+|---|---|---|
+| CSRF with token validation depending on the request method | CSRF (CWE-352) | [CSRF/csrf-lab2-writeup.md](CSRF/csrf-lab2-writeup.md) |
+| CSRF with token not tied to the user session | CSRF (CWE-352) | [CSRF/csrf-lab4-writeup.md](CSRF/csrf-lab4-writeup.md) |
+| CSRF with token tied to non-session cookie | CSRF + CRLF Injection (CWE-352, CWE-113) | [CSRF/csrf-lab5-writeup.md](CSRF/csrf-lab5-writeup.md) |
+
 ## Notes
 
 - All testing was done only in PortSwigger practice labs, with permission from the lab itself.
 - No real credentials, real company names, or real systems are in these files. Session cookies and recovered passwords in screenshots are blacked out.
 - Screenshots live in each topic folder's `Images/` folder — keep that folder with the markdown files, or the images will not show.
+- CSRF lab 5 (token tied to non-session cookie) was solved with guided coaching, not blind — it is scheduled for a blind redo in the Dec 14–20 review week.
