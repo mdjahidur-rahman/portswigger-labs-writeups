@@ -41,11 +41,13 @@ wiener:51dc30ddc473d43a6011e9ebba6ca770
    `51dc30ddc473d43a6011e9ebba6ca770` is the MD5 of `peter` — which
    confirms the hash is a plain unsalted MD5 of the password. The
    cookie also has no `HttpOnly` flag, so JavaScript can read it.
+   
 3. Find the XSS flaw. The blog comment form takes a comment, name,
    email, and website. Post a test comment containing
    `<script>alert(1)</script>` — the alert runs, confirming stored
    XSS in the comment field.
-4. Steal the victim's cookie. Post a comment with a payload that
+  
+4.  Steal the victim's cookie. Post a comment with a payload that
    sends the reader's cookies to your exploit server:
 
 ```html
@@ -55,8 +57,10 @@ wiener:51dc30ddc473d43a6011e9ebba6ca770
    When carlos reads the blog post, his browser runs the script and
    his `stay-logged-in` cookie arrives in the exploit server's
    access log.
+   
 5. Decode carlos's cookie the same way to get his username and MD5
    hash. (Hash found: ___)
+   
 6. Crack the hash offline. MD5 is fast and unsalted, so a
    dictionary attack works — run it through hashcat or a lookup
    service:
@@ -66,6 +70,7 @@ hashcat -m 0 -a 0 <hash> rockyou.txt
 ```
 
    (Password found: ___)
+   
 7. Log in as `carlos` with the cracked password, open the "My
    account" page, and delete the account to solve the lab.
 
